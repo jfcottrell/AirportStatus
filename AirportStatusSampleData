@@ -1,0 +1,61 @@
+<AirportStatus>
+<Delay>true</Delay>
+<IATA>HOU</IATA>
+<State>Texas</State>
+<Name>Houston William P Hobby</Name>
+<Weather>
+<Visibility>4.00</Visibility>
+<Weather>Rain Fog/Mist and Breezy</Weather>
+<Meta>
+<Credit>NOAA's National Weather Service</Credit>
+<Updated>4:53 PM Local</Updated>
+<Url>http://weather.gov/</Url>
+</Meta>
+<Temp>74.0 F (23.3 C)</Temp>
+<Wind>Northeast at 20.7mph</Wind>
+</Weather>
+<ICAO>KHOU</ICAO>
+<City>Houston</City>
+<Status>
+<Reason>WEATHER / HURRICANE HARVEY</Reason>
+<ClosureBegin>Aug 27 at 02:55 AM CDT.</ClosureBegin>
+<EndTime/>
+<MinDelay/>
+<AvgDelay/>
+<MaxDelay/>
+<ClosureEnd>Aug 30 at 08:00 AM CDT.</ClosureEnd>
+<Trend/>
+<Type>Airport Closure</Type>
+</Status>
+</AirportStatus>
+
+{
+   "delay":"true",
+   "IATA":"HOU",
+   "state":"Texas",
+   "name":"Houston William P Hobby",
+   "weather":{
+      "visibility":4.00,
+      "weather":"Rain Fog/Mist and Breezy",
+      "meta":{
+         "credit":"NOAA's National Weather Service",
+         "updated":"4:53 PM Local",
+         "url":"http://weather.gov/"
+      },
+      "temp":"74.0 F (23.3 C)",
+      "wind":"Northeast at 20.7mph"
+   },
+   "ICAO":"KHOU",
+   "city":"Houston",
+   "status":{
+      "reason":"WEATHER / HURRICANE HARVEY",
+      "closureBegin":"Aug 27 at 02:55 AM CDT.",
+      "endTime":"",
+      "minDelay":"",
+      "avgDelay":"",
+      "maxDelay":"",
+      "closureEnd":"Aug 30 at 08:00 AM CDT.",
+      "trend":"",
+      "type":"Airport Closure"
+   }
+}
