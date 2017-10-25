@@ -12,11 +12,7 @@ struct AirportInfo {
     var airportCode: String
     var airportName: String
     var cityName: String
-    var stateName: String
-    var stateCode: String
     var lat: String
     var lon: String
     var website: String
 }
-
-
