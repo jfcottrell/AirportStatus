@@ -17,6 +17,8 @@
 		0AC723611F9FCB9C002E0659 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC723601F9FCB9C002E0659 /* test.json */; };
 		0AC723651F9FDB79002E0659 /* AirportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC723641F9FDB79002E0659 /* AirportInfo.swift */; };
 		0AC723671F9FF114002E0659 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC723661F9FF114002E0659 /* airports.json */; };
+		0AC723691FA0EB21002E0659 /* AirportDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC723681FA0EB21002E0659 /* AirportDataModel.swift */; };
+		0AC7236C1FA26824002E0659 /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7236B1FA26824002E0659 /* AirportDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		0AC723601F9FCB9C002E0659 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		0AC723641F9FDB79002E0659 /* AirportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportInfo.swift; sourceTree = "<group>"; };
 		0AC723661F9FF114002E0659 /* airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		0AC723681FA0EB21002E0659 /* AirportDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDataModel.swift; sourceTree = "<group>"; };
+		0AC7236B1FA26824002E0659 /* AirportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +107,14 @@
 		0A6B596E1F4736DE002E123A /* AirportStatus */ = {
 			isa = PBXGroup;
 			children = (
+				0AC7236A1FA11114002E0659 /* model */,
 				0A6B59711F4736DE002E123A /* ViewController.swift */,
 				0A6B596F1F4736DE002E123A /* AppDelegate.swift */,
 				0A6B59731F4736DE002E123A /* Main.storyboard */,
 				0A6B59761F4736DE002E123A /* Assets.xcassets */,
 				0A6B59781F4736DE002E123A /* LaunchScreen.storyboard */,
 				0A6B597B1F4736DE002E123A /* Info.plist */,
-				0AC723601F9FCB9C002E0659 /* test.json */,
-				0AC723641F9FDB79002E0659 /* AirportInfo.swift */,
-				0AC723661F9FF114002E0659 /* airports.json */,
+				0AC7236B1FA26824002E0659 /* AirportDetailViewController.swift */,
 			);
 			path = AirportStatus;
 			sourceTree = "<group>";
@@ -132,6 +135,17 @@
 				0A6B59911F4736DE002E123A /* Info.plist */,
 			);
 			path = AirportStatusUITests;
+			sourceTree = "<group>";
+		};
+		0AC7236A1FA11114002E0659 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0AC723601F9FCB9C002E0659 /* test.json */,
+				0AC723641F9FDB79002E0659 /* AirportInfo.swift */,
+				0AC723661F9FF114002E0659 /* airports.json */,
+				0AC723681FA0EB21002E0659 /* AirportDataModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC723651F9FDB79002E0659 /* AirportInfo.swift in Sources */,
+				0AC723691FA0EB21002E0659 /* AirportDataModel.swift in Sources */,
 				0A6B59721F4736DE002E123A /* ViewController.swift in Sources */,
+				0AC7236C1FA26824002E0659 /* AirportDetailViewController.swift in Sources */,
 				0A6B59701F4736DE002E123A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

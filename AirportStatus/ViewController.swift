@@ -11,9 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let urlString: String = "https://sservices.faa.gov/airport/status/HOU?format=application/json"
-    var airportInfoArray = [[AirportInfo]]()
-    var stateInfoArray = [String]()
-    
+    var airportArray = [AirportDataModel]()
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -88,36 +86,36 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func loadAirportsFile() {
         
-        let filename = "test"
+        let filename = "airports"
         let type = "json"
         var data:Data
-        var section = 0
-        var airportInfoRow = [AirportInfo]()
         
         if let path = Bundle.main.path(forResource: filename, ofType: type) {
             do {
                 let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-                //print(text)
                 data = text.data(using: .utf8)!
                 let json = try? JSONSerialization.jsonObject(with: data) as! [String:Any]
                 if let json = json {
                     if let airports = json["airports"] {
                         print(airports)
                         for airport in airports as! [AnyObject] {
-                            let airportCode = airport["airportCode"] as! String
-                            let airportName = airport["airportName"] as! String
-                            let cityName = airport["cityName"] as! String
+
                             let stateCode = airport["stateCode"] as! String
                             let stateName = airport["stateName"] as! String
-                            let lat = airport["lat"] as! String
-                            let lon = airport["lon"] as! String
-                            let website = airport["website"] as! String
-                            let airportInfo = AirportInfo(airportCode: airportCode, airportName: airportName, cityName: cityName, stateName: stateName, stateCode: stateCode, lat: lat, lon: lon, website: website)
-                            airportInfoArray.append(airportInfo)
-                            let stateInfo = stateName + " (" + stateCode + ")"
-                            if stateInfoArray.contains(stateInfo) == false {
-                                stateInfoArray.append(stateInfo)
+                            var airportInfoArray = [AirportInfo]()
+                            
+                            for airportData in airport["Data"] as! [AnyObject] {
+                                let airportCode = airportData["airportCode"] as! String
+                                let airportName = airportData["airportName"] as! String
+                                let cityName = airportData["cityName"] as! String
+                                let lat = airportData["lat"] as! String
+                                let lon = airportData["lon"] as! String
+                                let website = airportData["website"] as! String
+                                let airportInfo = AirportInfo(airportCode: airportCode, airportName: airportName, cityName: cityName, lat: lat, lon: lon, website: website)
+                                airportInfoArray.append(airportInfo)
                             }
+                            let airportDataModel = AirportDataModel(stateCode: stateCode, stateName: stateName, airportInfo: airportInfoArray)
+                            airportArray.append(airportDataModel)
                         }
                     }
                 }
@@ -128,12 +126,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             print("Failed to load file from app bundle \(filename)")
         }
+
+        // Sort airport groups by state code
+        airportArray = airportArray.sorted{ $0.stateCode < $1.stateCode}
+
+        tableView.reloadData()
     }
+    
+    // MARK: - Storyboard segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "main_detail_segue" {
+            if let airportDetailViewController = segue.destination as? AirportDetailViewController {
+                let airportDataModel = airportArray[(sender as! IndexPath).section]
+                airportDetailViewController.airportDataModel = airportDataModel
+                airportDetailViewController.index = (sender as! IndexPath).row
+            }
+        }
+    }
+
     
     // TableView delegates
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.airportInfoArray.count
+        return airportArray[section].airportInfo.count
     }
     
     // create a cell for each table view row
@@ -143,26 +158,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as UITableViewCell!
         
         // set the text from the data model
-        cell.textLabel?.text = self.airportInfoArray[indexPath.row].airportName
+        cell.textLabel?.text = airportArray[indexPath.section].airportInfo[indexPath.row].airportName
         
         return cell
     }
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
+        //print("You tapped cell number \(indexPath.section) \(indexPath.row).")
+        self.performSegue(withIdentifier: "main_detail_segue", sender: indexPath);
     }
     
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        return self.stateInfoArray[section]
+        return airportArray[section].stateName
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        
-        return self.stateInfoArray.count
+    func numberOfSections(in tableView: UITableView) -> Int {
+        print("airportArray.count = \(airportArray.count)")
+        return airportArray.count
     }
 }

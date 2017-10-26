@@ -1,26 +1,113 @@
-AL,Alabama,Birmingham,Birmingham-Shuttlesworth International,BHM,33.563889,-86.752222,FlyBirmingham.com
-AL,Alabama,Dothan,Dothan Regional Airport,DHN,31.321111,-85.449444,FlyDothan.com
-AL,Alabama,Huntsville,Huntsville International Airport,HSV,34.637222,-86.775,	www.FlyHuntsville.com
-AL,Alabama,Mobile,Mobile Regional Airport,MOB,30.691389,-88.242778,www.mobairport.com
-AL,Alabama,Montgomery,Montgomery Regional Airport,MGM,32.300556,-86.393889,flymgm.com
-AK,Alaska,Anchorage,Ted Stevens Anchorage International Airport,ANC,61.174167,-149.998333,www.dot.state.ak.us/anc/
-AK,Alaska,Fairbanks,Fairbanks International Airport,FAI,64.815,-147.856389,www.fai.alaska.gov
-AK,Alaska,Juneau,Juneau International Airport,JNU,58.355,-134.576389,Juneau.org/airport
-AZ,Arizona,Flagstaff,Flagstaff Pulliam Airport,FLG,35.140278,-111.669167,http://www.flagstaff.az.gov/1541/Flagstaff-Airport
-AZ,Arizona,Phoenix,Phoenix Sky Harbor International Airport,PHX,33.434167,-112.011667,www.skyharbor.com
-AZ,Arizona,Tucson,Tucson International Airport,TUS,32.116111,-110.941111,www.flytucson.com
-AZ,Arizona,Yuma,Yuma International Airport,YUM,32.656667,-114.606111,yumaairport.com
-AR,Arkansas,Fayetteville,Northwest Arkansas Regional Airport,FYV,36.281667,-94.307778,www.flyxna.com
-AR,Arkansas,Little Rock,Bill and Hillary Clinton National Airport,LIT,34.729444,-92.224722,Fly-LIT.com
-CA,California,Burbank,Bob Hope Airport,BUR,34.200556,-118.358611,www.HollywoodBurbankAirport.com
-CA,California,Fresno,Fresno Yosemite International Airport,FAT,36.776667,-119.718889,www.flyfresno.com
-CA,California,Long Beach,Long Beach Airport,LGB,33.817778,-118.151667,www.LGB.org
-CA,California,Los Angeles,Los Angeles International Airport,LAX,33.9425,-118.408056,www.lawa.org
-CA,California,Oakland,Oakland International Airport,OAK,37.721389,-122.220833,oaklandairport.com
-CA,California,Ontario,Ontario International Airport,ONT,34.056111,-117.601111,www.flyontario.com
-CA,California,Palm Springs,Palm Springs International Airport,PSP,33.829722,-116.506667,http://www.palmspringsca.gov/government/departments/aviation-palm-springs-international-airport-psp
-CA,California,Sacramento,Sacramento International Airport,SMF,38.695556,-121.590833,www.sacramento.aero/smf/
-CA,California,San Diego,San Diego International Airport,SAN,32.733611,-117.189722,www.san.org
-CA,California,San Francisco,San Francisco International Airport,SFO,37.618889,-122.375,FlySFO.com
-CA,California,San Jose,Normal Y. Mineta San Jose International Airport,SJC,37.362778,-121.929167,www.flysanjose.com
-CA,California,Santa Ana,John Wayne Airport,SNA,33.675556,-117.868333,www.OCair.com
+Birmingham,Birmingham-Shuttlesworth International,BHM,AL,Alabama,33.563889,-86.752222,FlyBirmingham.com
+Dothan,Dothan Regional,DHN,AL,Alabama,31.321111,-85.449444,FlyDothan.com
+Huntsville,Huntsville International,HSV,AL,Alabama,34.637222,-86.775,	www.FlyHuntsville.com
+Mobile,Mobile Regional,MOB,AL,Alabama,30.691389,-88.242778,www.mobairport.com
+Montgomery,Montgomery Regional,MGM,AL,Alabama,32.300556,-86.393889,flymgm.com
+Anchorage,Ted Stevens Anchorage International,ANC,AK,Alaska,61.174167,-149.998333,www.dot.state.ak.us/anc/
+Fairbanks,Fairbanks International,FAI,AK,Alaska,64.815,-147.856389,www.fai.alaska.gov
+Juneau,Juneau International,JNU,AK,Alaska,58.355,-134.576389,Juneau.org/airport
+Flagstaff,Flagstaff Pulliam,FLG,AZ,Arizona,35.140278,-111.669167,http://www.flagstaff.az.gov/1541/Flagstaff-Airport
+Phoenix,Phoenix Sky Harbor International,PHX,AZ,Arizona,33.434167,-112.011667,www.skyharbor.com
+Tucson,Tucson International,TUS,AZ,Arizona,32.116111,-110.941111,www.flytucson.com
+Yuma,Yuma International,YUM,AZ,Arizona,32.656667,-114.606111,yumaairport.com
+Fayetteville,Northwest Arkansas Regional,FYV,AR,Arkansas,36.281667,-94.307778,www.flyxna.com
+Little Rock,Bill and Hillary Clinton National,LIT,AR,Arkansas,34.729444,-92.224722,Fly-LIT.com
+Burbank,Bob Hope Airport,BUR,CA,California,34.200556,-118.358611,www.HollywoodBurbankAirport.com
+Fresno,Fresno Yosemite International,FAT,CA,California,36.776667,-119.718889,www.flyfresno.com
+Long Beach,Long Beach Airport,LGB,CA,California,33.817778,-118.151667,www.LGB.org
+Los Angeles,Los Angeles International,LAX,CA,California,33.9425,-118.408056,www.lawa.org
+Oakland,Oakland International,OAK,CA,California,37.721389,-122.220833,oaklandairport.com
+Ontario,Ontario International,ONT,CA,California,34.056111,-117.601111,www.flyontario.com
+Palm Springs,Palm Springs International,PSP,CA,California,33.829722,-116.506667,http://www.palmspringsca.gov/government/departments/aviation-palm-springs-international-airport-psp
+Sacramento,Sacramento International,SMF,CA,California,38.695556,-121.590833,www.sacramento.aero/smf/
+San Diego,San Diego International,SAN,CA,California,32.733611,-117.189722,www.san.org
+San Francisco,San Francisco International,SFO,CA,California,37.618889,-122.375,FlySFO.com
+San Jose,Normal Y. Mineta San Jose International,SJC,CA,California,37.362778,-121.929167,www.flysanjose.com
+Santa Ana,John Wayne Airport,SNA,CA,California,33.675556,-117.868333,www.OCair.com
+Aspen,Aspen-Pitkin County Airport,ASE,CO,Colorado,39.223056,-106.868889,AspenAirport.com
+Colorado Springs,City of Colorado Springs Municipal,COS,CO,Colorado,38.805833,-104.700833,Colorado Springs Airport
+Denver,Denver International,DEN,CO,Colorado,39.861667,-104.673056,http://www.flydenver.com
+Grand Junction,Grand Junction Regional,GJT,CO,Colorado,39.1225,-108.526667,www.gjairport.com
+Pueblo,Pueblo Memorial,PUB,CO,Colorado,,,
+Hartford,Bradley International,BDL,CT,Connecticut,41.939167,-72.683333,bradleyairport.com
+Daytona Beach,Daytona Beach International,DAB,FL,Florida,29.184722,-81.060556,www.flydaytonafirst.com
+Fort Lauderdale,Fort Lauderdale-Hollywood International,FLL,FL,Florida,26.0725,-80.152778,www.broward.org/airport
+Fort Myers,Southwest Florida International,RSW,FL,Florida,26.536111,-81.755278,flylcpa.com
+Jacksonville,Jacksonville International,JAX,FL,Florida,30.494167,-81.687778,flyjacksonville.com
+Key West,Key West International,EYW,FL,Florida,24.556111,-81.759444,eyw.com
+Miami,Miami International,MIA,FL,Florida,25.793333,-80.290556,iflymia.com
+Orlando,Orlando International,MCO,FL,Florida,28.429444,-81.308889,www.orlandoairports.net
+Panama City,Northwest Florida Beaches International,PFN,FL,Florida,30.358333,-85.795556,iFlyBeaches.com
+Pensacola,Pensacola International,PNS,FL,Florida,30.473333,-87.186667,www.FlyPensacola.com
+St. Petersburg,St. Pete-Clearwater International,PIE,FL,Florida,27.91,-82.6875,www.Fly2PIE.com
+Sarasota,Sarasota-Bradenton International,SRQ,FL,Florida,27.395556,-82.554444,srq-airport.com
+Tampa,Tampa International,TPA,FL,Florida,27.975556,-82.533333,www.TampaAirport.com
+West Palm Beach,Palm Beach International,PBI,FL,Florida,26.683056,-80.095556,www.pbia.org
+Atlanta,Hartsfield-Jackson International ,ATL,GA,Georgia,33.636667,-84.428056,atlanta-airport.com
+Augusta,Augusta Regional,AGS,GA,Georgia,33.37,-81.964444,http://www.flyags.com
+Savannah,Savannah/Hilton Head International,SAV,GA,Georgia,32.1275,-81.202222,SavannahAirport.com
+Hilo,Hilo International,ITO,HI,Hawaii,19.720278,-155.048333,hawaii.gov/ito
+Honolulu,Honolulu International Airport,HNL,HI,Hawaii,21.318611,-157.9225,airports.hawaii.gov/hnl
+Kahului,Kahului Airport,OGG,HI,Hawaii,20.898611,-156.430556,hawaii.gov/ogg
+Kailua,Kona International,KOA,HI,Hawaii,19.738889,-156.045556,hawaii.gov/koa
+Lihue,Lihue Airport,LIH,HI,Hawaii,21.976111,-159.338889,hawaii.gov/lih
+Boise,Boise Airport,BOI,ID,Idaho,43.564444,-116.222778,www.iflyboise.com
+Chicago,Midway International,MDW,IL,Illinois,41.786111,-87.7525,www.flychicago.com
+Chicago,O'Hare International,ORD,IL,Illinois,41.978611,-87.904722,www.flychicago.com/ohare
+Moline,Quad City International,MLI,IL,Illinois,41.448611,-90.5075,qcairport.com
+Peoria,General Wayne A. Downing Peroria International,PIA,IL,Illinois,40.664167,-89.693333,www.FlyPIA.com
+Evansville,Evansville Regional,EVV,IN,Indiana,38.038333,-87.530833,www.flyevv.com
+Fort Wayne,Fort Wayne International,FWA,IN,Indiana,40.978333,-85.195278,www.FlyFWA.com
+Indianapolis International Airport,Indianapolis International Airport,IND,IN,Indiana,39.717222,-86.294444,Indianapolisairport.com
+South Bend,South Bend International,SBN,IN,Indiana,41.708333,-86.317222,www.FlySBN.com
+Cedar Rapids,The Eastern Iowa Airport,CID,IA,Iowa,41.884694,-91.710806,http://www.eiairport.org/
+Des Moines,Des Moines International,DSM,IA,Iowa,41.533889,-93.663056,www.DSMairport.com
+Wichita,Wichita Dwight D. Eisenhower National,ICT,KS,Kansas,37.65,-97.433056,flywichita.com
+Lexington,Blue Grass Airport,LEX,KY,Kentucky,38.036389,-84.605833,bluegrassairport.com
+Louisville,Louisville International,SDF,KY,Kentucky,38.174167,-85.736389,www.flylouisville.com
+Baton Rouge,Baton Rouge Metropolitan,BTR,LA,Louisiana,30.532778,-91.15,www.flybtr.com
+New Orleans International Airport,Louis Armstrong New Orleans International,MSY,LA,Louisiana,29.993333,-90.258056,flymsy.com
+Shreveport,Shreveport Regional,SHV,LA,Louisiana,32.446667,-93.825556,flyshreveport.com
+Bangor,Bangor International,BGR,ME,Maine,44.807222,-68.828056,www.flybangor.com
+Portland,Portland International Jetport,PWM,ME,Maine,43.646111,-70.309167,www.portlandjetport.org
+Baltimore,Baltimore/Washington International,BWI,MD,Maryland,39.175278,-76.668333,www.bwiairport.com
+Boston,Logan International Airport,BOS,MA,Massachusetts,42.363056,-71.006389,www.massport.com/logan-airport/
+Hyannis,Barnstable Municipal Airport,HYA,MA,Massachusetts,41.669444,-70.280278,www.town.barnstable.ma.us/
+Nantucket,Nantucket Memorial,ACK,MA,Massachusetts,41.252889,-70.059,www.nantucketairport.com
+Worcester,Worcester Regional,ORH,MA,Massachusetts,42.267222,-71.875833,www.massport.com/worcester-airport
+Detroit,Detroit Metropolitan Wayne County,DTW,MI,Michigan,42.2125,-83.353333,www.metroairport.com
+Flint,Bishop International,FNT,MI,Michigan,42.965556,-83.743611,www.bishopairport.org
+Grand Rapids,Gerald R. Ford International,GRR,MI,Michigan,42.880833,-85.522778,www.flygrandrapids.org
+Kalamazoo,Kalamazoo-Battle Creek International,AZO,MI,Michigan,42.235,-85.551944,www.azoairport.com
+Lansing,Capital Region International,LAN,MI,Michigan,42.778639,-84.586194,www.flylansing.com
+Saginaw,MBS International,MBS,MI,Michigan,43.532778,-84.079722,www.mbsairport.org
+Duluth,Duluth International,DLH,MN,Minnesota,46.842222,-92.193611,www.DuluthAirport.com
+Minneapolis/St.Paul,Minneapolis/St.Paul International,MSP,MN,Minnesota,44.881944,-93.221667,www.mspairport.com
+Rochester,Rochester,RST,MN,Minnesota,43.908333,-92.5,www.flyrst.com
+Gulfport,Gulfport-Biloxi International,GPT,MS,Mississippi,30.407222,-89.07,www.FlyGPT.com
+Jackson,Jackson-Evers International,JAN,MS,Mississippi,32.311111,-90.075833,www.jmaa.com
+Kansas City,Kansas City International,MCI,MO,Missouri,39.2975,-94.713889,FlyKCI.com
+St Louis,Lambert International,STL,MO,Missouri,38.747222,-90.361389,http://www.flystl.com/
+Springfield,Springfield-Branson National,SGF,MO,Missouri,,,http://www.flyspringfield.com
+BIllings,Billings Logan International,BIL,MT,Montana,45.807778,-108.542778,FlyBillings.com
+Bozeman,Bozeman Yellowstone International,BZN,MT,Montana,45.777,-111.152,BozemanAirport.com
+Lincoln,Lincoln,LNK,NE,Nebraska,40.851111,-96.759167,www.lincolnairport.com
+Omaha,Eppley Airfield,OMA,NE,Nebraska,41.3012,-95.8954,www.flyoma.com
+Las Vegas,McCarran International Airport,LAS,NV,Nevada,36.08,-115.152222,mccarran.com
+Reno,Reno-Tahoe International,RNO,NV,Nevada,39.499167,-119.768056,www.renoairport.com
+Manchester,Manchester-Boston Regional,MHT,NH,New Hampshire,42.9325,-71.435556,www.flymanchester.com
+Atlantic City,Atlantic City International,ACY,NJ,New Jersey,39.4575,-74.577222,http://www.sjta.com/acairport/
+Newark,Newark Liberty International,EWR,NJ,New Jersey,40.6925,-74.168611,newarkairport.com
+Trenton,Trenton-Mercer,TTN,NJ,New Jersey,40.276667,-74.813333,http://www.mercercounty.org/departments/transportation-and-infrastructure/trenton-mercer-airport
+Albuquerque,Albuquerque International Sunport,ABQ,NM,New Mexico,35.039333,-106.610778,abqsunport.com
+Farmington,Four Cornerns Regional,FMN,NM,New Mexico,36.741111,-108.23,http://www.fmtn.org/172/Airport
+Santa Fe,Santa Fe Municipal,SAF,NM,New Mexico,35.617222,-106.089444,https://www.santafenm.gov/airport
+Albany International Airport,Albany International,ALB,NY,New York,42.749167,-73.801944,www.albanyairport.com
+Buffalo,Buffalo Niagara International,BUF,NY,New York,42.940556,-78.732222,www.buffaloairport.com
+Islip,Long Island MacArthur,ISP,NY,New York,40.795278,-73.100278,MacArthurAirport.com
+New York,John F Kennedy International Airport,JFK,NY,New York,40.639722,-73.778889,kennedyairport.com
+New York,La Guardia Airport,LGA,NY,New York,40.77725,-73.872611,laguardiaairport.com
+Newburgh,Stewart International,SWF,NY,New York,41.504167,-74.104722,panynj.gov/airports/stewart.html
+Rochester,Greater Rochester International,ROC,NY,New York,43.118889,-77.6725,www.rocairport.com
+Syracuse,Syracuse Hancock International,SYR,NY,New York,43.111111,-76.106389,flysyracuse.com
+Westchester,Westchester County,HPN,NY,New York,41.066944,-73.7075,airport.WestchesterGov.com
