@@ -1,6 +1,88 @@
 {
     "airports":[
                 {
+                "stateCode":"WA",
+                "stateName":"Washington",
+                "Data":[
+                        {
+                        "cityName":"Pasco",
+                        "airportName":"Tri-Cities Airport",
+                        "airportCode":"PSC",
+                        "lat":"46.264678",
+                        "lon":"-119.119028",
+                        "website":"flytricities.com"
+                        },
+                        {
+                        "cityName":"Seattle",
+                        "airportName":"King County International",
+                        "airportCode":"BFI",
+                        "lat":"47.53",
+                        "lon":"-122.301944",
+                        "website":"http://www.kingcounty.gov/depts/transportation/airport.aspx"
+                        },
+                        {
+                        "cityName":"Seattle",
+                        "airportName":"Seattle-Tacoma International Airport",
+                        "airportCode":"SEA",
+                        "lat":"47.448889",
+                        "lon":"-122.309444",
+                        "website":"portseattle.org/seatac"
+                        },
+                        {
+                        "cityName":"Spokane",
+                        "airportName":"Spokane International",
+                        "airportCode":"GEG",
+                        "lat":"47.62",
+                        "lon":"-117.533889",
+                        "website":"SpokaneAirports.net"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"WI",
+                "stateName":"Wisconsin",
+                "Data":[
+                        {
+                        "cityName":"Green Bay",
+                        "airportName":"Green Bay-Austin Struabel International",
+                        "airportCode":"GRB",
+                        "lat":"44.484722",
+                        "lon":"-88.129722",
+                        "website":"flygrb.com"
+                        },
+                        {
+                        "cityName":"Madison",
+                        "airportName":"Dane County Regional",
+                        "airportCode":"MSN",
+                        "lat":"43.139722",
+                        "lon":"-89.3375",
+                        "website":"msnairport.com"
+                        },
+                        {
+                        "cityName":"Milwaukee",
+                        "airportName":"General Mitchell International",
+                        "airportCode":"MKE",
+                        "lat":"42.947222",
+                        "lon":"-87.896667",
+                        "website":"www.MitchellAirport.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"WV",
+                "stateName":"West Virginia",
+                "Data":[
+                        {
+                        "cityName":"Charleston",
+                        "airportName":"Yeager Airport",
+                        "airportCode":"CRW",
+                        "lat":"38.375833",
+                        "lon":"-81.593056",
+                        "website":"YeagerAirport.com"
+                        }
+                        ]
+                },
+                {
                 "stateCode":"HI",
                 "stateName":"Hawaii",
                 "Data":[
@@ -157,6 +239,36 @@
                         ]
                 },
                 {
+                "stateCode":"WY",
+                "stateName":"Wyoming",
+                "Data":[
+                        {
+                        "cityName":"Casper",
+                        "airportName":"Casper-Natrona County International",
+                        "airportCode":"CPR",
+                        "lat":"42.908056",
+                        "lon":"-106.464444",
+                        "website":"iflycasper.com"
+                        },
+                        {
+                        "cityName":"Cheyenne",
+                        "airportName":"Cheyenne Regional",
+                        "airportCode":"CYS",
+                        "lat":"",
+                        "lon":"",
+                        "website":"www.CheyenneAirport.com"
+                        },
+                        {
+                        "cityName":"Jackson Hole",
+                        "airportName":"Jackson Hole",
+                        "airportCode":"JAC",
+                        "lat":"43.607222",
+                        "lon":"-110.737778",
+                        "website":"www.JacksonHoleAirport.com"
+                        }
+                        ]
+                },
+                {
                 "stateCode":"NH",
                 "stateName":"New Hampshire",
                 "Data":[
@@ -231,6 +343,100 @@
                         ]
                 },
                 {
+                "stateCode":"TX",
+                "stateName":"Texas",
+                "Data":[
+                        {
+                        "cityName":"Amarillo",
+                        "airportName":"Rick Husband Amarillo International",
+                        "airportCode":"AMA",
+                        "lat":"35.219444",
+                        "lon":"-101.705833",
+                        "website":"http://airport.amarillo.gov"
+                        },
+                        {
+                        "cityName":"Austin Bergstrom International Airport",
+                        "airportName":"Austin-Bergstrom International",
+                        "airportCode":"AUS",
+                        "lat":"30.194444",
+                        "lon":"-97.67",
+                        "website":"www.austintexas.gov/airport"
+                        },
+                        {
+                        "cityName":"Corpus Christi",
+                        "airportName":"Corpus Christi International",
+                        "airportCode":"CRP",
+                        "lat":"27.770278",
+                        "lon":"-97.501111",
+                        "website":"wow.corpuschristiairport.com"
+                        },
+                        {
+                        "cityName":"Dallas",
+                        "airportName":"Dallas Love Field",
+                        "airportCode":"DAL",
+                        "lat":"32.847222",
+                        "lon":"-96.851667",
+                        "website":"www.dallas-lovefield.com"
+                        },
+                        {
+                        "cityName":"Dallas ",
+                        "airportName":"Dallas/Fort Worth International",
+                        "airportCode":"DFW",
+                        "lat":"32.896944",
+                        "lon":"-97.038056",
+                        "website":"dfwairport.com"
+                        },
+                        {
+                        "cityName":"El Paso",
+                        "airportName":"El Paso International",
+                        "airportCode":"ELP",
+                        "lat":"31.807222",
+                        "lon":"-106.3775",
+                        "website":"elpasointernationalairport.com"
+                        },
+                        {
+                        "cityName":"Houston ",
+                        "airportName":"William B Hobby",
+                        "airportCode":"HOU",
+                        "lat":"29.645556",
+                        "lon":"-95.278889",
+                        "website":"http://www.fly2houston.com/hobby"
+                        },
+                        {
+                        "cityName":"Houston ",
+                        "airportName":"George Bush Intercontinental",
+                        "airportCode":"IAH",
+                        "lat":"29.984444",
+                        "lon":"-95.341389",
+                        "website":"Fly2Houston.com"
+                        },
+                        {
+                        "cityName":"Lubbock",
+                        "airportName":"Lubbock Preston Smith International",
+                        "airportCode":"LBB",
+                        "lat":"33.663611",
+                        "lon":"-101.820556",
+                        "website":"http://www.flylbb.com"
+                        },
+                        {
+                        "cityName":"Midland",
+                        "airportName":"Midland International",
+                        "airportCode":"MAF",
+                        "lat":"31.9425",
+                        "lon":"-102.201944",
+                        "website":"www.FlyMAF.com"
+                        },
+                        {
+                        "cityName":"San Antonio International Airport",
+                        "airportName":"San Antonio International Airport",
+                        "airportCode":"SAT",
+                        "lat":"29.526667",
+                        "lon":"-98.471944",
+                        "website":"http://www.sanantonio.gov/SAT"
+                        }
+                        ]
+                },
+                {
                 "stateCode":"LA",
                 "stateName":"Louisiana",
                 "Data":[
@@ -261,6 +467,74 @@
                         ]
                 },
                 {
+                "stateCode":"NC",
+                "stateName":"North Carolina",
+                "Data":[
+                        {
+                        "cityName":"Asheville",
+                        "airportName":"Asheville Regional",
+                        "airportCode":"AVL",
+                        "lat":"35.436111",
+                        "lon":"-82.541667",
+                        "website":"www.flyavl.com"
+                        },
+                        {
+                        "cityName":"Charlotte/Douglas International Airport",
+                        "airportName":"Charlotte Douglas International Airport",
+                        "airportCode":"CLT",
+                        "lat":"35.213889",
+                        "lon":"-80.943056",
+                        "website":"www.charlotteairport.com"
+                        },
+                        {
+                        "cityName":"Fayetteville",
+                        "airportName":"Fayetteville Regional",
+                        "airportCode":"FAY",
+                        "lat":"34.991111",
+                        "lon":"-78.880278",
+                        "website":"www.flyfay.com"
+                        },
+                        {
+                        "cityName":"Greensboro",
+                        "airportName":"Piedmont Triad International",
+                        "airportCode":"GSO",
+                        "lat":"36.097778",
+                        "lon":"-79.937222",
+                        "website":"FlyFromPTI.com"
+                        },
+                        {
+                        "cityName":"Raleigh",
+                        "airportName":"Raleigh-Durham International",
+                        "airportCode":"RDU",
+                        "lat":"35.877778",
+                        "lon":"-78.7875",
+                        "website":"rdu.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"ND",
+                "stateName":"North Dakota",
+                "Data":[
+                        {
+                        "cityName":"Bismark",
+                        "airportName":"Bismark Municipal",
+                        "airportCode":"BIS",
+                        "lat":"46.772778",
+                        "lon":"-100.745833",
+                        "website":"BismarckAirport.com"
+                        },
+                        {
+                        "cityName":"Fargo",
+                        "airportName":"Hector International",
+                        "airportCode":"FAR",
+                        "lat":"46.920556",
+                        "lon":"-96.815556",
+                        "website":"www.FargoAirport.com"
+                        }
+                        ]
+                },
+                {
                 "stateCode":"NE",
                 "stateName":"Nebraska",
                 "Data":[
@@ -279,6 +553,52 @@
                         "lat":"41.3012",
                         "lon":"-95.8954",
                         "website":"www.flyoma.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"TN",
+                "stateName":"Tennessee",
+                "Data":[
+                        {
+                        "cityName":"Bristol",
+                        "airportName":"Tri-Cities Regional",
+                        "airportCode":"TRI",
+                        "lat":"36.475278",
+                        "lon":"82.4075",
+                        "website":"http://www.triflight.com"
+                        },
+                        {
+                        "cityName":"Chattanooga",
+                        "airportName":"Chattanooga Metropolitan",
+                        "airportCode":"CHA",
+                        "lat":"35.035278",
+                        "lon":"-85.203889",
+                        "website":"http://www.chattairport.com/www"
+                        },
+                        {
+                        "cityName":"Knoxville",
+                        "airportName":"McGhee Tyson Airport",
+                        "airportCode":"TYS",
+                        "lat":"35.811111",
+                        "lon":"-83.993889",
+                        "website":"www.TYS.org"
+                        },
+                        {
+                        "cityName":"Memphis",
+                        "airportName":"Memphis International",
+                        "airportCode":"MEM",
+                        "lat":"35.0425",
+                        "lon":"-89.976667",
+                        "website":"www.flymemphis.com"
+                        },
+                        {
+                        "cityName":"Nashville",
+                        "airportName":"Nashville International",
+                        "airportCode":"BNA",
+                        "lat":"36.126667",
+                        "lon":"-86.681944",
+                        "website":"www.flynashville.com"
                         }
                         ]
                 },
@@ -351,12 +671,66 @@
                         "website":"flysyracuse.com"
                         },
                         {
-                        "cityName":"Westchester",
+                        "cityName":"White Plains",
                         "airportName":"Westchester County",
                         "airportCode":"HPN",
                         "lat":"41.066944",
                         "lon":"-73.7075",
                         "website":"airport.WestchesterGov.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"PA",
+                "stateName":"Pennsylvania",
+                "Data":[
+                        {
+                        "cityName":"Allentown",
+                        "airportName":"Lehigh Valley International",
+                        "airportCode":"ABE",
+                        "lat":"40.652333",
+                        "lon":"-75.440472",
+                        "website":"flylvia.com"
+                        },
+                        {
+                        "cityName":"Erie",
+                        "airportName":"Erie International",
+                        "airportCode":"ERI",
+                        "lat":"42.083056",
+                        "lon":"-80.181944",
+                        "website":"www.erieairport.org"
+                        },
+                        {
+                        "cityName":"Harrisburg",
+                        "airportName":"Harrisburg International",
+                        "airportCode":"MDT",
+                        "lat":"40.193056",
+                        "lon":"-76.763333",
+                        "website":"www.FlyHIA.com"
+                        },
+                        {
+                        "cityName":"Philadelphia",
+                        "airportName":"Philadelphia International",
+                        "airportCode":"PHL",
+                        "lat":"39.871944",
+                        "lon":"-75.241111",
+                        "website":"www.phl.org"
+                        },
+                        {
+                        "cityName":"Pittsburgh",
+                        "airportName":"Pittsburgh International",
+                        "airportCode":"PIT",
+                        "lat":"40.491389",
+                        "lon":"-80.232778",
+                        "website":"FlyPittsburgh.com"
+                        },
+                        {
+                        "cityName":"Scranton",
+                        "airportName":"Wilkes-Barre/Scranton International",
+                        "airportCode":"AVP",
+                        "lat":"41.338333",
+                        "lon":"-75.723333",
+                        "website":"www.FlyAVP.com"
                         }
                         ]
                 },
@@ -481,6 +855,52 @@
                         "lat":"39.499167",
                         "lon":"-119.768056",
                         "website":"www.renoairport.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"VA",
+                "stateName":"Viriginia",
+                "Data":[
+                        {
+                        "cityName":"Chantilly",
+                        "airportName":"Washington Dulles International",
+                        "airportCode":"IAD",
+                        "lat":"38.944444",
+                        "lon":"-77.455833",
+                        "website":"http://www.flydulles.com"
+                        },
+                        {
+                        "cityName":"Newport News",
+                        "airportName":"Newport News/Williamsburg International",
+                        "airportCode":"PHF",
+                        "lat":"37.131944",
+                        "lon":"-76.493056",
+                        "website":"www.flyphf.com"
+                        },
+                        {
+                        "cityName":"Norfolk",
+                        "airportName":"Norfolk International",
+                        "airportCode":"ORF",
+                        "lat":"36.894722",
+                        "lon":"-76.201111",
+                        "website":"NorfolkAirport.com"
+                        },
+                        {
+                        "cityName":"Richmond",
+                        "airportName":"Richmond International",
+                        "airportCode":"RIC",
+                        "lat":"37.505",
+                        "lon":"-77.319444",
+                        "website":"www.flyrichmond.com"
+                        },
+                        {
+                        "cityName":"Roanoke",
+                        "airportName":"Roanoke-Blacksburg Regional",
+                        "airportCode":"ROA",
+                        "lat":"37.325556",
+                        "lon":"-79.975556",
+                        "website":"www.roanokeairport.com"
                         }
                         ]
                 },
@@ -629,6 +1049,20 @@
                         ]
                 },
                 {
+                "stateCode":"VT",
+                "stateName":"Vermont",
+                "Data":[
+                        {
+                        "cityName":"Burlington",
+                        "airportName":"Burlington",
+                        "airportCode":"BTV",
+                        "lat":"44.471944",
+                        "lon":"-73.153333",
+                        "website":"www.btv.aero"
+                        }
+                        ]
+                },
+                {
                 "stateCode":"IL",
                 "stateName":"Illinois",
                 "Data":[
@@ -753,6 +1187,28 @@
                         "lat":"41.533889",
                         "lon":"-93.663056",
                         "website":"www.DSMairport.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"OK",
+                "stateName":"Oklahoma",
+                "Data":[
+                        {
+                        "cityName":"Oklahoma City",
+                        "airportName":"Will Rogers World Airport",
+                        "airportCode":"OKC",
+                        "lat":"35.393056",
+                        "lon":"-97.600833",
+                        "website":"www.flyokc.com"
+                        },
+                        {
+                        "cityName":"Tulsa",
+                        "airportName":"Tulsa International",
+                        "airportCode":"TUL",
+                        "lat":"36.198333",
+                        "lon":"-95.888056",
+                        "website":"www.TulsaAirports.com"
                         }
                         ]
                 },
@@ -897,6 +1353,66 @@
                         ]
                 },
                 {
+                "stateCode":"OH",
+                "stateName":"Ohio",
+                "Data":[
+                        {
+                        "cityName":"Akron",
+                        "airportName":"Akron-Canton",
+                        "airportCode":"CAK",
+                        "lat":"40.915",
+                        "lon":"-81.443667",
+                        "website":"www.akroncantonairport.com"
+                        },
+                        {
+                        "cityName":"Cleveland",
+                        "airportName":"Cleveland-Hopkins International",
+                        "airportCode":"CLE",
+                        "lat":"41.411667",
+                        "lon":"-81.849722",
+                        "website":"www.clevelandairport.com"
+                        },
+                        {
+                        "cityName":"Columbus",
+                        "airportName":"John Glenn Columbus International",
+                        "airportCode":"CMH",
+                        "lat":"",
+                        "lon":"",
+                        "website":"http://flycolumbus.com/"
+                        },
+                        {
+                        "cityName":"Dayton",
+                        "airportName":"Dayton International",
+                        "airportCode":"DAY",
+                        "lat":"39.902222",
+                        "lon":"-84.219444",
+                        "website":"www.daytonairport.com"
+                        },
+                        {
+                        "cityName":"Toledo",
+                        "airportName":"Toledo Express",
+                        "airportCode":"TOL",
+                        "lat":"41.586806",
+                        "lon":"-83.807833",
+                        "website":"www.toledoexpress.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"UT",
+                "stateName":"Utah",
+                "Data":[
+                        {
+                        "cityName":"Salt Lake City",
+                        "airportName":"Salt Lake City International",
+                        "airportCode":"SLC",
+                        "lat":"40.788333",
+                        "lon":"-111.977778",
+                        "website":"slcairport.com"
+                        }
+                        ]
+                },
+                {
                 "stateCode":"MO",
                 "stateName":"Missouri",
                 "Data":[
@@ -1011,6 +1527,20 @@
                         ]
                 },
                 {
+                "stateCode":"RI",
+                "stateName":"Rhode Island",
+                "Data":[
+                        {
+                        "cityName":"Providence",
+                        "airportName":"T.F. Green International",
+                        "airportCode":"PVD",
+                        "lat":"41.723889",
+                        "lon":"-71.428333",
+                        "website":"www.pvdairport.com"
+                        }
+                        ]
+                },
+                {
                 "stateCode":"KS",
                 "stateName":"Kansas",
                 "Data":[
@@ -1069,6 +1599,44 @@
                         ]
                 },
                 {
+                "stateCode":"SC",
+                "stateName":"South Carolina",
+                "Data":[
+                        {
+                        "cityName":"Charleston",
+                        "airportName":"Charleston International",
+                        "airportCode":"CHS",
+                        "lat":"32.898611",
+                        "lon":"-80.040556",
+                        "website":"https://www.iflychs.com"
+                        },
+                        {
+                        "cityName":"Columbia",
+                        "airportName":"Columbia Metropolitan",
+                        "airportCode":"CAE",
+                        "lat":"33.938889",
+                        "lon":"-81.119444",
+                        "website":"www.columbiaairport.com"
+                        },
+                        {
+                        "cityName":"Greenville",
+                        "airportName":"Greenville-Spartanburg International",
+                        "airportCode":"GSP",
+                        "lat":"34.895556",
+                        "lon":"-82.218889",
+                        "website":"www.GSPairport.com"
+                        },
+                        {
+                        "cityName":"Myrtle Beach",
+                        "airportName":"Myrtle Beach International",
+                        "airportCode":"MYR",
+                        "lat":"33.679722",
+                        "lon":"-78.928333",
+                        "website":"FlyMyrtleBeach.com"
+                        }
+                        ]
+                },
+                {
                 "stateCode":"KY",
                 "stateName":"Kentucky",
                 "Data":[
@@ -1081,12 +1649,72 @@
                         "website":"bluegrassairport.com"
                         },
                         {
+                        "cityName":"Hebron",
+                        "airportName":"Cincinnati Kentucky International",
+                        "airportCode":"CVG",
+                        "lat":"39.048889",
+                        "lon":"-84.667778",
+                        "website":"www.cvgairport.com"
+                        },
+                        {
                         "cityName":"Louisville",
                         "airportName":"Louisville International",
                         "airportCode":"SDF",
                         "lat":"38.174167",
                         "lon":"-85.736389",
                         "website":"www.flylouisville.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"OR",
+                "stateName":"Oregon",
+                "Data":[
+                        {
+                        "cityName":"Eugene",
+                        "airportName":"Eugene",
+                        "airportCode":"EUG",
+                        "lat":"44.123056",
+                        "lon":"-123.218611",
+                        "website":"www.flyeug.com"
+                        },
+                        {
+                        "cityName":"Portland International Airport",
+                        "airportName":"Portland International Airport",
+                        "airportCode":"PDX",
+                        "lat":"45.588611",
+                        "lon":"-122.5975",
+                        "website":"www.flypdx.com"
+                        }
+                        ]
+                },
+                {
+                "stateCode":"SD",
+                "stateName":"South Dakota",
+                "Data":[
+                        {
+                        "cityName":"Pierre",
+                        "airportName":"Pierre Regional",
+                        "airportCode":"PIR",
+                        "lat":"44.382778",
+                        "lon":"-100.286111",
+                        "website":"PierreAirport.com"
+                        },
+                        {
+                        "cityName":"Rapid City",
+                        "airportName":"Rapid City Regional",
+                        "airportCode":"RAP",
+                        "lat":"44.045278",
+                        "lon":"-103.057222",
+                        "website":"https://www.rcgov.org/departments/airport.html"
+                        },
+                        {
+                        "cityName":"Sioux Falls",
+                        "airportName":"Sioux Falls",
+                        "airportCode":"FSD",
+                        "lat":"43.581944",
+                        "lon":"-96.741944",
+                        "website":"www.sfairport.com"
                         }
                         ]
                 }

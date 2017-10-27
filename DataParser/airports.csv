@@ -64,6 +64,7 @@ Cedar Rapids,The Eastern Iowa Airport,CID,IA,Iowa,41.884694,-91.710806,http://ww
 Des Moines,Des Moines International,DSM,IA,Iowa,41.533889,-93.663056,www.DSMairport.com
 Wichita,Wichita Dwight D. Eisenhower National,ICT,KS,Kansas,37.65,-97.433056,flywichita.com
 Lexington,Blue Grass Airport,LEX,KY,Kentucky,38.036389,-84.605833,bluegrassairport.com
+Hebron,Cincinnati Kentucky International,CVG,KY,Kentucky,39.048889,-84.667778,www.cvgairport.com
 Louisville,Louisville International,SDF,KY,Kentucky,38.174167,-85.736389,www.flylouisville.com
 Baton Rouge,Baton Rouge Metropolitan,BTR,LA,Louisiana,30.532778,-91.15,www.flybtr.com
 New Orleans International Airport,Louis Armstrong New Orleans International,MSY,LA,Louisiana,29.993333,-90.258056,flymsy.com
@@ -110,4 +111,68 @@ New York,La Guardia Airport,LGA,NY,New York,40.77725,-73.872611,laguardiaairport
 Newburgh,Stewart International,SWF,NY,New York,41.504167,-74.104722,panynj.gov/airports/stewart.html
 Rochester,Greater Rochester International,ROC,NY,New York,43.118889,-77.6725,www.rocairport.com
 Syracuse,Syracuse Hancock International,SYR,NY,New York,43.111111,-76.106389,flysyracuse.com
-Westchester,Westchester County,HPN,NY,New York,41.066944,-73.7075,airport.WestchesterGov.com
+White Plains,Westchester County,HPN,NY,New York,41.066944,-73.7075,airport.WestchesterGov.com
+Asheville,Asheville Regional,AVL,NC,North Carolina,35.436111,-82.541667,www.flyavl.com
+Charlotte/Douglas International Airport,Charlotte Douglas International Airport,CLT,NC,North Carolina,35.213889,-80.943056,www.charlotteairport.com
+Fayetteville,Fayetteville Regional,FAY,NC,North Carolina,34.991111,-78.880278,www.flyfay.com
+Greensboro,Piedmont Triad International,GSO,NC,North Carolina,36.097778,-79.937222,FlyFromPTI.com
+Raleigh,Raleigh-Durham International,RDU,NC,North Carolina,35.877778,-78.7875,rdu.com
+Bismark,Bismark Municipal,BIS,ND,North Dakota,46.772778,-100.745833,BismarckAirport.com
+Fargo,Hector International,FAR,ND,North Dakota,46.920556,-96.815556,www.FargoAirport.com
+Akron,Akron-Canton,CAK,OH,Ohio,40.915,-81.443667,www.akroncantonairport.com
+Cleveland,Cleveland-Hopkins International,CLE,OH,Ohio,41.411667,-81.849722,www.clevelandairport.com
+Columbus,John Glenn Columbus International,CMH,OH,Ohio,,,http://flycolumbus.com/
+Dayton,Dayton International,DAY,OH,Ohio,39.902222,-84.219444,www.daytonairport.com
+Toledo,Toledo Express,TOL,OH,Ohio,41.586806,-83.807833,www.toledoexpress.com
+Oklahoma City,Will Rogers World Airport,OKC,OK,Oklahoma,35.393056,-97.600833,www.flyokc.com
+Tulsa,Tulsa International,TUL,OK,Oklahoma,36.198333,-95.888056,www.TulsaAirports.com
+Eugene,Eugene,EUG,OR,Oregon,44.123056,-123.218611,www.flyeug.com
+Portland International Airport,Portland International Airport,PDX,OR,Oregon,45.588611,-122.5975,www.flypdx.com
+Allentown,Lehigh Valley International,ABE,PA,Pennsylvania,40.652333,-75.440472,flylvia.com
+Erie,Erie International,ERI,PA,Pennsylvania,42.083056,-80.181944,www.erieairport.org
+Harrisburg,Harrisburg International,MDT,PA,Pennsylvania,40.193056,-76.763333,www.FlyHIA.com
+Philadelphia,Philadelphia International,PHL,PA,Pennsylvania,39.871944,-75.241111,www.phl.org
+Pittsburgh,Pittsburgh International,PIT,PA,Pennsylvania,40.491389,-80.232778,FlyPittsburgh.com
+Scranton,Wilkes-Barre/Scranton International,AVP,PA,Pennsylvania,41.338333,-75.723333,www.FlyAVP.com
+Providence,T.F. Green International,PVD,RI,Rhode Island,41.723889,-71.428333,www.pvdairport.com
+Charleston,Charleston International,CHS,SC,South Carolina,32.898611,-80.040556,https://www.iflychs.com
+Columbia,Columbia Metropolitan,CAE,SC,South Carolina,33.938889,-81.119444,www.columbiaairport.com
+Greenville,Greenville-Spartanburg International,GSP,SC,South Carolina,34.895556,-82.218889,www.GSPairport.com
+Myrtle Beach,Myrtle Beach International,MYR,SC,South Carolina,33.679722,-78.928333,FlyMyrtleBeach.com
+Pierre,Pierre Regional,PIR,SD,South Dakota,44.382778,-100.286111,PierreAirport.com
+Rapid City,Rapid City Regional,RAP,SD,South Dakota,44.045278,-103.057222,https://www.rcgov.org/departments/airport.html
+Sioux Falls,Sioux Falls,FSD,SD,South Dakota,43.581944,-96.741944,www.sfairport.com
+Bristol,Tri-Cities Regional,TRI,TN,Tennessee,36.475278,82.4075,http://www.triflight.com
+Chattanooga,Chattanooga Metropolitan,CHA,TN,Tennessee,35.035278,-85.203889,http://www.chattairport.com/www
+Knoxville,McGhee Tyson Airport,TYS,TN,Tennessee,35.811111,-83.993889,www.TYS.org
+Memphis,Memphis International,MEM,TN,Tennessee,35.0425,-89.976667,www.flymemphis.com
+Nashville,Nashville International,BNA,TN,Tennessee,36.126667,-86.681944,www.flynashville.com
+Amarillo,Rick Husband Amarillo International,AMA,TX,Texas,35.219444,-101.705833,http://airport.amarillo.gov
+Austin Bergstrom International Airport,Austin-Bergstrom International,AUS,TX,Texas,30.194444,-97.67,www.austintexas.gov/airport
+Corpus Christi,Corpus Christi International,CRP,TX,Texas,27.770278,-97.501111,wow.corpuschristiairport.com
+Dallas,Dallas Love Field,DAL,TX,Texas,32.847222,-96.851667,www.dallas-lovefield.com
+Dallas ,Dallas/Fort Worth International,DFW,TX,Texas,32.896944,-97.038056,dfwairport.com
+El Paso,El Paso International,ELP,TX,Texas,31.807222,-106.3775,elpasointernationalairport.com
+Houston ,William B Hobby,HOU,TX,Texas,29.645556,-95.278889,http://www.fly2houston.com/hobby
+Houston ,George Bush Intercontinental,IAH,TX,Texas,29.984444,-95.341389,Fly2Houston.com
+Lubbock,Lubbock Preston Smith International,LBB,TX,Texas,33.663611,-101.820556,http://www.flylbb.com
+Midland,Midland International,MAF,TX,Texas,31.9425,-102.201944,www.FlyMAF.com
+San Antonio International Airport,San Antonio International Airport,SAT,TX,Texas,29.526667,-98.471944,http://www.sanantonio.gov/SAT
+Salt Lake City,Salt Lake City International,SLC,UT,Utah,40.788333,-111.977778,slcairport.com
+Burlington,Burlington,BTV,VT,Vermont,44.471944,-73.153333,www.btv.aero
+Chantilly,Washington Dulles International,IAD,VA,Viriginia,38.944444,-77.455833,http://www.flydulles.com
+Newport News,Newport News/Williamsburg International,PHF,VA,Viriginia,37.131944,-76.493056,www.flyphf.com
+Norfolk,Norfolk International,ORF,VA,Viriginia,36.894722,-76.201111,NorfolkAirport.com
+Richmond,Richmond International,RIC,VA,Viriginia,37.505,-77.319444,www.flyrichmond.com
+Roanoke,Roanoke-Blacksburg Regional,ROA,VA,Viriginia,37.325556,-79.975556,www.roanokeairport.com
+Pasco,Tri-Cities Airport,PSC,WA,Washington,46.264678,-119.119028,flytricities.com
+Seattle,King County International,BFI,WA,Washington,47.53,-122.301944,http://www.kingcounty.gov/depts/transportation/airport.aspx
+Seattle,Seattle-Tacoma International Airport,SEA,WA,Washington,47.448889,-122.309444,portseattle.org/seatac
+Spokane,Spokane International,GEG,WA,Washington,47.62,-117.533889,SpokaneAirports.net
+Charleston,Yeager Airport,CRW,WV,West Virginia,38.375833,-81.593056,YeagerAirport.com
+Green Bay,Green Bay-Austin Struabel International,GRB,WI,Wisconsin,44.484722,-88.129722,flygrb.com
+Madison,Dane County Regional,MSN,WI,Wisconsin,43.139722,-89.3375,msnairport.com
+Milwaukee,General Mitchell International,MKE,WI,Wisconsin,42.947222,-87.896667,www.MitchellAirport.com
+Casper,Casper-Natrona County International,CPR,WY,Wyoming,42.908056,-106.464444,iflycasper.com
+Cheyenne,Cheyenne Regional,CYS,WY,Wyoming,,,www.CheyenneAirport.com
+Jackson Hole,Jackson Hole,JAC,WY,Wyoming,43.607222,-110.737778,www.JacksonHoleAirport.com
