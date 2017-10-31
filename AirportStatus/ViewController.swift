@@ -47,18 +47,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             if let response = response {
-                print(response)
+                print("response \(response)")
             } else {
                 print("NO RESPONSE.")
             }
             
             if let data = data {
                 let dataString = String(data: data, encoding: .utf8)
-                print(dataString!)
+                print("dataString = \(dataString)")
             } else {
                 print("NO DATA.")
             }
-            
         })
         task.resume()
     }
@@ -130,6 +129,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Sort airport groups by state code
         airportArray = airportArray.sorted{ $0.stateCode < $1.stateCode}
 
+        // Reload table view
         tableView.reloadData()
     }
     
@@ -144,8 +144,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 
-    
-    // TableView delegates
+    // MARK: - Table View delegates
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return airportArray[section].airportInfo.count
@@ -168,8 +167,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //print("You tapped cell number \(indexPath.section) \(indexPath.row).")
         self.performSegue(withIdentifier: "main_detail_segue", sender: indexPath);
     }
-    
-    // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         

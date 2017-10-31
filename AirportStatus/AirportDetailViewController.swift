@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AirportDetailViewController: UIViewController {
+class AirportDetailViewController: UIViewController, StatusDelegate {
     
     var airportDataModel: AirportDataModel?
     var index: Int?
@@ -19,13 +19,23 @@ class AirportDetailViewController: UIViewController {
         super.viewDidLoad()
         
         let airportName = airportDataModel?.airportInfo[index!].airportName
+        let airportCode = airportDataModel?.airportInfo[index!].airportCode
         airportNameLabel.text = airportName
         
+        let sessionManager = URLSessionManager(airportCode: airportCode!)
+        sessionManager.delegate = self
+        _ = sessionManager.getAirportWeather(url: "https://services.faa.gov/airport/status/[AIRPORTCODE]?format=application/json")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Status delegate callback
+    func statusDataLoaded(json: String) {
+        
+        print("json = \(json)")
     }
 
 }
