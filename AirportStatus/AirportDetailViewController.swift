@@ -36,6 +36,8 @@ class AirportDetailViewController: UIViewController, StatusDelegate {
     func statusDataLoaded(json: String) {
         
         print("json = \(json)")
+        let faaData = FaaDataParser()
+        faaData.parseJsonString(json: json)
     }
 
 }

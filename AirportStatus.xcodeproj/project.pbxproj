@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A43FB1C1FA7DE31003832CF /* URLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43FB1B1FA7DE31003832CF /* URLSessionManager.swift */; };
+		0A43FB1E1FA8C4A0003832CF /* FaaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43FB1D1FA8C4A0003832CF /* FaaData.swift */; };
+		0A43FB201FA8CDE1003832CF /* FaaDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43FB1F1FA8CDE1003832CF /* FaaDataParser.swift */; };
 		0A6B59701F4736DE002E123A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B596F1F4736DE002E123A /* AppDelegate.swift */; };
 		0A6B59721F4736DE002E123A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B59711F4736DE002E123A /* ViewController.swift */; };
 		0A6B59751F4736DE002E123A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B59731F4736DE002E123A /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0A43FB1B1FA7DE31003832CF /* URLSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionManager.swift; sourceTree = "<group>"; };
+		0A43FB1D1FA8C4A0003832CF /* FaaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaaData.swift; sourceTree = "<group>"; };
+		0A43FB1F1FA8CDE1003832CF /* FaaDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaaDataParser.swift; sourceTree = "<group>"; };
 		0A6B596C1F4736DE002E123A /* AirportStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6B596F1F4736DE002E123A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A6B59711F4736DE002E123A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				0AC723661F9FF114002E0659 /* airports.json */,
 				0AC723681FA0EB21002E0659 /* AirportDataModel.swift */,
 				0AC7236D1FA3A9B3002E0659 /* statussample.json */,
+				0A43FB1D1FA8C4A0003832CF /* FaaData.swift */,
+				0A43FB1F1FA8CDE1003832CF /* FaaDataParser.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -291,9 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A43FB1C1FA7DE31003832CF /* URLSessionManager.swift in Sources */,
+				0A43FB1E1FA8C4A0003832CF /* FaaData.swift in Sources */,
 				0AC723651F9FDB79002E0659 /* AirportInfo.swift in Sources */,
 				0AC723691FA0EB21002E0659 /* AirportDataModel.swift in Sources */,
 				0A6B59721F4736DE002E123A /* ViewController.swift in Sources */,
+				0A43FB201FA8CDE1003832CF /* FaaDataParser.swift in Sources */,
 				0AC7236C1FA26824002E0659 /* AirportDetailViewController.swift in Sources */,
 				0A6B59701F4736DE002E123A /* AppDelegate.swift in Sources */,
 			);
