@@ -20,20 +20,22 @@ enum WindDirection: String {
     case Variable
 }
 
-enum WeatherConditions: String {
-    case Fair
-    case PartlyCloudy
-    case MostlyCloudy
-    case AFewClouds
-    case FogMist
-    case Overcast
-    case Rain
-    case Breezy
-}
+//enum WeatherConditions: String {
+//    case Fair =  "Fair"
+//    case PartlyCloudy = "Partly Cloudy"
+//    case MostlyCloudy = "Mostly Cloudy"
+//    case AFewClouds = "A Few Clouds"
+//    case FogMist = "Fog/Mist"
+//    case Overcast = "Overcast"
+//    case Rain = "Rain"
+//    case Breezy = "Breezy"
+//    case LightDrizzle = "Light Drizzle"
+//}
 
 struct Weather {
     var visibility: Float
-    var weatherConditions: WeatherConditions
+    //var weatherConditions: WeatherConditions      // turns out airports can have multiple weather conditions so a single enum won't work
+    var weatherConditions: [String]
     var tempF: String
     var windDirection: WindDirection
     var windSpeed: String

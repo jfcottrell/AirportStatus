@@ -40,8 +40,8 @@ struct FaaDataParser {
         }
 
         let vis = visibility as! Float
-        let conditionsString = (conditions as! String).removingWhitespaces()
-        let cond = WeatherConditions(rawValue: conditionsString)
+        let conditionsString = (conditions as! String) //.removingWhitespaces()
+//        let cond = WeatherConditions(rawValue: conditionsString)
         let windArray = (wind as! String).components(separatedBy: " ")
         var windDirectionString: String?
         var windDirection: WindDirection
@@ -51,14 +51,52 @@ struct FaaDataParser {
         windSpeed = windArray[2]
 
         print("vis = \(vis)")
-        print("cond = \(String(describing: cond))")
+//        print("cond = \(String(describing: cond))")
         print("wind dir = \(String(describing: windDirection))")
         print("wind speed = \(String(describing: windSpeed))")
         print("temp = \(temp)")
         
-        let weatherInfo = Weather(visibility: vis, weatherConditions: cond!, tempF: temp as! String, windDirection: windDirection, windSpeed: windSpeed!)
+        var conditionsArray: [String] = []
         
-        print("+++ \(weatherInfo)")
+        if conditionsString.range(of:"Fair") != nil {
+            conditionsArray.append("Fair")
+        }
+        
+        if conditionsString.range(of:"Partly Cloudy") != nil {
+            conditionsArray.append("partlycloudy")
+        }
+        
+        if conditionsString.range(of:"Mostly Cloudy") != nil {
+            conditionsArray.append("mostlycloudy")
+        }
+        
+        if conditionsString.range(of:"A Few Clouds") != nil {
+            conditionsArray.append("afewclouds")
+        }
+        
+        if conditionsString.range(of:"Fog/Mist") != nil {
+            conditionsArray.append("fogmist")
+        }
+        
+        if conditionsString.range(of:"Overcast") != nil {
+            conditionsArray.append("overcast")
+        }
+        
+        if conditionsString.range(of:"Rain") != nil {
+            conditionsArray.append("Rain")
+        }
+        
+        if conditionsString.range(of:"Breezy") != nil {
+            conditionsArray.append("breezy")
+        }
+        
+        if conditionsString.range(of:"Light Drizzle") != nil {
+            conditionsArray.append("lightdrizzle")
+        }
+        
+        print("conditions array = \(conditionsArray)")
+    
+        let weatherInfo = Weather(visibility: vis, weatherConditions: conditionsArray, tempF: temp as! String, windDirection: windDirection, windSpeed: windSpeed!)
         
         let status = json!["status"] as! [String:Any]
         print("status = \(status)")

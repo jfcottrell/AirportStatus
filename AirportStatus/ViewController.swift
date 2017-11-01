@@ -159,22 +159,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // set the text from the data model
         cell.textLabel?.text = airportArray[indexPath.section].airportInfo[indexPath.row].airportName
         
+        // add disclosure arrow
+        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+        
         return cell
     }
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //print("You tapped cell number \(indexPath.section) \(indexPath.row).")
         self.performSegue(withIdentifier: "main_detail_segue", sender: indexPath);
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
         return airportArray[section].stateName
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        print("airportArray.count = \(airportArray.count)")
         return airportArray.count
     }
 }
