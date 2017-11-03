@@ -21,7 +21,6 @@
 		0AC723671F9FF114002E0659 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC723661F9FF114002E0659 /* airports.json */; };
 		0AC723691FA0EB21002E0659 /* AirportDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC723681FA0EB21002E0659 /* AirportDataModel.swift */; };
 		0AC7236C1FA26824002E0659 /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7236B1FA26824002E0659 /* AirportDetailViewController.swift */; };
-		0AC7236E1FA3A9B3002E0659 /* statussample.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC7236D1FA3A9B3002E0659 /* statussample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		0AC723661F9FF114002E0659 /* airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
 		0AC723681FA0EB21002E0659 /* AirportDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDataModel.swift; sourceTree = "<group>"; };
 		0AC7236B1FA26824002E0659 /* AirportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
-		0AC7236D1FA3A9B3002E0659 /* statussample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = statussample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +148,6 @@
 				0AC723641F9FDB79002E0659 /* AirportInfo.swift */,
 				0AC723661F9FF114002E0659 /* airports.json */,
 				0AC723681FA0EB21002E0659 /* AirportDataModel.swift */,
-				0AC7236D1FA3A9B3002E0659 /* statussample.json */,
 				0A43FB1D1FA8C4A0003832CF /* FaaData.swift */,
 				0A43FB1F1FA8CDE1003832CF /* FaaDataParser.swift */,
 			);
@@ -269,7 +266,6 @@
 			files = (
 				0A6B597A1F4736DE002E123A /* LaunchScreen.storyboard in Resources */,
 				0A6B59771F4736DE002E123A /* Assets.xcassets in Resources */,
-				0AC7236E1FA3A9B3002E0659 /* statussample.json in Resources */,
 				0A6B59751F4736DE002E123A /* Main.storyboard in Resources */,
 				0AC723671F9FF114002E0659 /* airports.json in Resources */,
 			);
