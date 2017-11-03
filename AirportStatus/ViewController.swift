@@ -170,10 +170,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.performSegue(withIdentifier: "main_detail_segue", sender: indexPath);
     }
     
+    // section title
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return airportArray[section].stateName
     }
     
+    // count sections
     func numberOfSections(in tableView: UITableView) -> Int {
         return airportArray.count
     }
