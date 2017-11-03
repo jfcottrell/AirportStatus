@@ -15,7 +15,21 @@ struct FaaDataParser {
         let data: Data = json.data(using: .utf8)!
         var faaData: FaaData
         
+        // guard against invalid json
+        if JSONSerialization.isValidJSONObject(data) {
+            print("Valid Json")
+        } else {
+            print("InValid Json")
+            return
+        }
+        
         let json = try? JSONSerialization.jsonObject(with: data) as! [String:Any]
+        
+        // check to see if there has been a json exception
+        if let exception = json!["Exception"] {
+            print("Exception: \(exception)")
+            return
+        }
         
         // top level json data
         guard let delayString = json!["delay"] else {
