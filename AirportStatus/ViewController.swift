@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             if let data = data {
                 let dataString = String(data: data, encoding: .utf8)
-                print("dataString = \(dataString)")
+                print("dataString = \(String(describing: dataString))")
             } else {
                 print("NO DATA.")
             }

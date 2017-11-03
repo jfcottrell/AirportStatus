@@ -12,36 +12,62 @@ struct FaaDataParser {
     
     func parseJsonString(json: String) {
         
-        var data: Data = json.data(using: .utf8)!
+        let data: Data = json.data(using: .utf8)!
         var faaData: FaaData
         
         let json = try? JSONSerialization.jsonObject(with: data) as! [String:Any]
+        
+        // top level json data
+        guard let delayString = json!["delay"] else {
+            print ("can't parse delay")
+            return
+        }
+        
+        guard let iata = json!["IATA"] else {
+            print ("can't parse IATA")
+            return
+        }
+        
+        guard let state = json!["state"] else {
+            print ("can't parse state")
+            return
+        }
+        
+        guard let name = json!["name"] else {
+            print ("can't parse name")
+            return
+        }
+        
+        guard let city = json!["city"] else {
+            print ("can't parse city")
+            return
+        }
+        
+        // weather conditions sub-data
         let weather = json!["weather"] as! [String:Any]
-        print("weather = \(weather)")
         
         guard let conditions = weather["weather"] else {
-            print("can't parse weather conditions")
+            print("can't parse weather: conditions")
             return
         }
         
         guard let visibility = weather["visibility"] else {
-            print("can't parse weather visibility")
+            print("can't parse weather: visibility")
             return
         }
         
         guard let wind = weather["wind"] else {
-            print("can't parse weather wind")
+            print("can't parse weather: wind")
             return
         }
         
         guard let temp = weather["temp"] else {
-            print("can't parse weather temp")
+            print("can't parse weather: temp")
             return
         }
 
         let vis = visibility as! Float
-        let conditionsString = (conditions as! String) //.removingWhitespaces()
-//        let cond = WeatherConditions(rawValue: conditionsString)
+        let conditionsString = (conditions as! String)
         let windArray = (wind as! String).components(separatedBy: " ")
         var windDirectionString: String?
         var windDirection: WindDirection
@@ -49,17 +75,12 @@ struct FaaDataParser {
         windDirectionString = windArray[0]
         windDirection = WindDirection(rawValue: windDirectionString!)!
         windSpeed = windArray[2]
-
-        print("vis = \(vis)")
-//        print("cond = \(String(describing: cond))")
-        print("wind dir = \(String(describing: windDirection))")
-        print("wind speed = \(String(describing: windSpeed))")
-        print("temp = \(temp)")
         
+        // there can be *multiple* weather conditions so store them in array
         var conditionsArray: [String] = []
         
         if conditionsString.range(of:"Fair") != nil {
-            conditionsArray.append("Fair")
+            conditionsArray.append("fair")
         }
         
         if conditionsString.range(of:"Partly Cloudy") != nil {
@@ -83,7 +104,7 @@ struct FaaDataParser {
         }
         
         if conditionsString.range(of:"Rain") != nil {
-            conditionsArray.append("Rain")
+            conditionsArray.append("rain")
         }
         
         if conditionsString.range(of:"Breezy") != nil {
@@ -94,74 +115,89 @@ struct FaaDataParser {
             conditionsArray.append("lightdrizzle")
         }
         
-        print("conditions array = \(conditionsArray)")
-    
         let weatherInfo = Weather(visibility: vis, weatherConditions: conditionsArray, tempF: temp as! String, windDirection: windDirection, windSpeed: windSpeed!)
         
+        // status sub-data
         let status = json!["status"] as! [String:Any]
-        print("status = \(status)")
         
         guard let avgDelay = status["avgDelay"] else {
-            print("can't parse status avg delay")
+            print("can't parse status: avg delay")
             return
         }
         
         guard let reason = status["reason"] else {
-            print("can't parse status reason")
+            print("can't parse status: reason")
             return
         }
         
         guard let minDelay = status["minDelay"] else {
-            print("can't parse status minDelay")
+            print("can't parse status: minDelay")
             return
         }
         
         guard let maxDelay = status["maxDelay"] else {
-            print("can't parse status maxDelay")
+            print("can't parse status: maxDelay")
             return
         }
         
         guard let trend = status["trend"] else {
-            print("can't parse status trend")
+            print("can't parse status: trend")
             return
         }
         
         guard let endTime = status["endTime"] else {
-            print("can't parse status endTime")
+            print("can't parse status: endTime")
             return
         }
         
         guard let closureEnd = status["closureEnd"] else {
-            print("can't parse status closureEnd")
+            print("can't parse status: closureEnd")
             return
         }
         
         guard let type = status["type"] else {
-            print("can't parse status type")
+            print("can't parse status: type")
             return
         }
         
         guard let closureBegin = status["closureBegin"] else {
-            print("can't parse status closureBegin")
+            print("can't parse status: closureBegin")
             return
         }
         
-        print("avg delay = \(avgDelay)")
-        print("reason = \(reason)")
-        print("minDelay = \(minDelay)")
-        print("maxDelay = \(maxDelay)")
-        print("trend = \(trend)")
-        print("endTime = \(endTime)")
-        print("closureEnd = \(closureEnd)")
-        print("type = \(type)")
-        print("closureBegin = \(closureBegin)")
+        let statusInfo = Status(reason: reason as! String, closureBegin: closureBegin as! String, endTime: endTime as! String, minDelay: minDelay as! String, avgDelay: avgDelay as! String, maxDelay: maxDelay as! String, closureEnd: closureEnd as! String, trend: trend as! String, type: type as! String)
+
+        var delay: Bool = false
+        if (delayString as! String).lowercased() == "true" {
+            delay = true
+        }
         
-        
+        faaData = FaaData(delay: delay, IATA: iata as! String, state: state as! String, name: name as! String, weather: weatherInfo, /*ICAO: icao as! String,*/ city: city as! String, status: statusInfo)
+        faaData.printData()
     }
 }
 
-extension String {
-    func removingWhitespaces() -> String {
-        return components(separatedBy: .whitespaces).joined()
-    }
+func printFaaData(faaData: FaaData) {
+    print("------ FAA Data ------")
+    print("delay:  \(faaData.delay)")
+    print("IATA:   \(faaData.IATA)")
+    print("state:  \(faaData.state)")
+    print("city:   \(faaData.city)")
+    print("name:   \(faaData.name)")
+    print("weather")
+    print("  visibility:  \(faaData.weather.visibility)")
+    print("  conditions:  \(faaData.weather.weatherConditions)")
+    print("  temperature: \(faaData.weather.tempF)")
+    print("  wind dir:    \(faaData.weather.windDirection.rawValue)")
+    print("  wind speed:  \(faaData.weather.windSpeed)")
+    print("status")
+    print("  reason:        \(faaData.status.reason)")
+    print("  closure begin: \(faaData.status.closureBegin)")
+    print("  closure end:   \(faaData.status.closureEnd)")
+    print("  end time:      \(faaData.status.endTime)")
+    print("  min delay:     \(faaData.status.minDelay)")
+    print("  avg delay:     \(faaData.status.avgDelay)")
+    print("  max delay:     \(faaData.status.maxDelay)")
+    print("  trend:         \(faaData.status.trend)")
+    print("  type:          \(faaData.status.type)")
 }

@@ -20,21 +20,8 @@ enum WindDirection: String {
     case Variable
 }
 
-//enum WeatherConditions: String {
-//    case Fair =  "Fair"
-//    case PartlyCloudy = "Partly Cloudy"
-//    case MostlyCloudy = "Mostly Cloudy"
-//    case AFewClouds = "A Few Clouds"
-//    case FogMist = "Fog/Mist"
-//    case Overcast = "Overcast"
-//    case Rain = "Rain"
-//    case Breezy = "Breezy"
-//    case LightDrizzle = "Light Drizzle"
-//}
-
 struct Weather {
     var visibility: Float
-    //var weatherConditions: WeatherConditions      // turns out airports can have multiple weather conditions so a single enum won't work
     var weatherConditions: [String]
     var tempF: String
     var windDirection: WindDirection
@@ -59,7 +46,31 @@ struct FaaData {
     var state: String
     var name: String
     var weather: Weather
-    var ICAO: String
     var city: String
     var status: Status
+    
+    func printData() {
+        print("------ FAA Data ------")
+        print("delay:  \(delay)")
+        print("IATA:   \(IATA)")
+        print("state:  \(state)")
+        print("city:   \(city)")
+        print("name:   \(name)")
+        print("weather")
+        print("  visibility:  \(weather.visibility)")
+        print("  conditions:  \(weather.weatherConditions)")
+        print("  temperature: \(weather.tempF)")
+        print("  wind dir:    \(weather.windDirection.rawValue)")
+        print("  wind speed:  \(weather.windSpeed)")
+        print("status")
+        print("  reason:        \(status.reason)")
+        print("  closure begin: \(status.closureBegin)")
+        print("  closure end:   \(status.closureEnd)")
+        print("  end time:      \(status.endTime)")
+        print("  min delay:     \(status.minDelay)")
+        print("  avg delay:     \(status.avgDelay)")
+        print("  max delay:     \(status.maxDelay)")
+        print("  trend:         \(status.trend)")
+        print("  type:          \(status.type)")
+    }
 }
