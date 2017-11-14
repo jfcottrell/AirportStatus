@@ -13,7 +13,13 @@ class AirportDetailViewController: UIViewController, StatusDelegate {
     
     var airportDataModel: AirportDataModel?
     var index: Int?
+    
     @IBOutlet weak var airportNameLabel: UILabel!
+    @IBOutlet weak var delayLabel: UILabel!
+    @IBOutlet weak var windSpeedAndDir: UILabel!
+    @IBOutlet weak var conditionsLabel: UILabel!
+    @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var visibility: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +42,18 @@ class AirportDetailViewController: UIViewController, StatusDelegate {
     func statusDataLoaded(json: String) {
         
         print("json = \(json)")
-        let faaData = FaaDataParser()
-        faaData.parseJsonString(json: json)
+        let faaDataParser = FaaDataParser()
+        let faaData:FaaData = faaDataParser.parseJsonString(json: json)!
+
+        if faaData.delay == true {
+            DispatchQueue.main.async {
+                [unowned self] in self.delayLabel.text = "Yes"
+            }
+        } else {
+            DispatchQueue.main.async {
+                [unowned self] in self.delayLabel.text = "No"
+            }
+        }
     }
 
 }
