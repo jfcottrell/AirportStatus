@@ -10,51 +10,52 @@ import Foundation
 
 struct FaaDataParser {
     
-    func parseJsonString(json: String) {
+    func parseJsonString(json: String) -> FaaData? {
         
-        let data: Data = json.data(using: .utf8)!
         var faaData: FaaData
         
+        let data: Data = json.data(using: .utf8)!
+        
         // guard against invalid json
-        if JSONSerialization.isValidJSONObject(data) {
-            print("Valid Json")
-        } else {
-            print("InValid Json")
-            return
-        }
+//        if JSONSerialization.isValidJSONObject(data) {
+//            print("Valid Json")
+//        } else {
+//            print("InValid Json")
+//            return
+//        }
         
         let json = try? JSONSerialization.jsonObject(with: data) as! [String:Any]
         
         // check to see if there has been a json exception
         if let exception = json!["Exception"] {
             print("Exception: \(exception)")
-            return
+            return nil
         }
         
         // top level json data
         guard let delayString = json!["delay"] else {
             print ("can't parse delay")
-            return
+            return nil
         }
         
         guard let iata = json!["IATA"] else {
             print ("can't parse IATA")
-            return
+            return nil
         }
         
         guard let state = json!["state"] else {
             print ("can't parse state")
-            return
+            return nil
         }
         
         guard let name = json!["name"] else {
             print ("can't parse name")
-            return
+            return nil
         }
         
         guard let city = json!["city"] else {
             print ("can't parse city")
-            return
+            return nil
         }
         
         // weather conditions sub-data
@@ -62,22 +63,22 @@ struct FaaDataParser {
         
         guard let conditions = weather["weather"] else {
             print("can't parse weather: conditions")
-            return
+            return nil
         }
         
         guard let visibility = weather["visibility"] else {
             print("can't parse weather: visibility")
-            return
+            return nil
         }
         
         guard let wind = weather["wind"] else {
             print("can't parse weather: wind")
-            return
+            return nil
         }
         
         guard let temp = weather["temp"] else {
             print("can't parse weather: temp")
-            return
+            return nil
         }
 
         let vis = visibility as! Float
@@ -136,47 +137,47 @@ struct FaaDataParser {
         
         guard let avgDelay = status["avgDelay"] else {
             print("can't parse status: avg delay")
-            return
+            return nil
         }
         
         guard let reason = status["reason"] else {
             print("can't parse status: reason")
-            return
+            return nil
         }
         
         guard let minDelay = status["minDelay"] else {
             print("can't parse status: minDelay")
-            return
+            return nil
         }
         
         guard let maxDelay = status["maxDelay"] else {
             print("can't parse status: maxDelay")
-            return
+            return nil
         }
         
         guard let trend = status["trend"] else {
             print("can't parse status: trend")
-            return
+            return nil
         }
         
         guard let endTime = status["endTime"] else {
             print("can't parse status: endTime")
-            return
+            return nil
         }
         
         guard let closureEnd = status["closureEnd"] else {
             print("can't parse status: closureEnd")
-            return
+            return nil
         }
         
         guard let type = status["type"] else {
             print("can't parse status: type")
-            return
+            return nil
         }
         
         guard let closureBegin = status["closureBegin"] else {
             print("can't parse status: closureBegin")
-            return
+            return nil
         }
         
         let statusInfo = Status(reason: reason as! String, closureBegin: closureBegin as! String, endTime: endTime as! String, minDelay: minDelay as! String, avgDelay: avgDelay as! String, maxDelay: maxDelay as! String, closureEnd: closureEnd as! String, trend: trend as! String, type: type as! String)
@@ -188,6 +189,7 @@ struct FaaDataParser {
         
         faaData = FaaData(delay: delay, IATA: iata as! String, state: state as! String, name: name as! String, weather: weatherInfo, /*ICAO: icao as! String,*/ city: city as! String, status: statusInfo)
         faaData.printData()
+        return faaData
     }
 }
 
